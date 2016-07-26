@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="full-width">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Project Name</title>
+        <title>Initial Page</title>
         <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 		<link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/index-style.css">
@@ -14,24 +14,56 @@
         <script type="text/javascript" src="js/app.js"></script>
     </head>
 
-    <body>
-        <div class="container">
-            <div class="row">
+    <body class="full-width">
+        <div class="full-width container-fluid">
+            <div class="row full-width">
                 <nav class="nav">
                     <ul>
-                        <li>
+                        <li class="login">
                             <a href="log-in.html">Log In</a>
                         </li>
-                        <li>
-                            <a href="sign-up.html">Sign Up</a>
+                        <li class="start-meetup">
+                            <a href="start-meetup.html">Start a Meetup</a>
                         </li>
+                        <label for="password" class="nav-label">
+                            <span class="nav-label-name">Password:</span><br>
+                            <input type="text" name="password1" placeholder="shhh..." required>
+                        </label>
+                        <label for="email" class="nav-label">
+                            <span class="nav-label-name">Email Address:</span><br>
+                            <input type="text" name="email" placeholder="name@example.com" required>
+                        </label>
                     </ul>
                 </nav>
-                <header class="header">
-                    <h1>Meetup with friends.</h1>
-                </header>
-                <img id="background-image" src="img/beach1.jpg" alt="Friends camping on scenic beach">
-
+            </div>
+            <div class="sign-up">
+                <h2 class="sign-up-title">Sign Up</h2>
+                <label for="full-name">
+                    <span class="pi-label">Full Name:</span>
+                    <input type="text" name="fullname" placeholder="John Doe" required>
+                </label><br>
+                <label for="email">
+                    <span class="pi-label">Email Address:</span>
+                    <input type="text" name="email" placeholder="name@example.com" required>
+                </label><br>
+                <label for="password">
+                    <span class="pi-label">Password:</span>
+                    <input type="text" name="password1" placeholder="shhh..." required><br>
+                    <span class="pi-label">Confirm Password: </span>
+                    <input type="text" name="password1" placeholder="I said, shhh..." required>
+                </label><br>
+            </div>
+            <div class="row full-width">
+                <!-- <header class="header">
+                    <h1>
+                        <a href="start-meetup.html">Meetup with friends.</a>
+                    </h1>
+                </header> -->
+                <img class="background-image img-responsive" src="img/beach1.jpg" alt="Friends camping on scenic beach">
+            </div>
+            <div class="row full-width">
+                <footer class="footers navbar-fixed-bottom">
+                </footer>
             </div>
         </div>
     </body>

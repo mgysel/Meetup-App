@@ -1,4 +1,105 @@
-#background-image {
-	position: absolute;
-	width: 100%;
+html, body {
+	height: 100%;
 };
+
+.nav, .header, .background-image .footer {
+	border: 1px solid black;
+};
+
+.background-image {
+	display: flex;
+	flex-wrap: wrap;
+	z-index: 0;
+	position: fixed;
+};
+
+.header {
+	position: absolute;
+	margin-left: 8%;
+	margin-top: 24.93%;
+	transform: rotate(-.98deg);
+	z-index: 1;
+	color: #FFF;
+}
+
+.nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333333
+};
+
+
+.nav li a {
+	padding: none;
+	color: #FFF;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	text-decoration: none;
+};
+
+.start-meetup {
+	float: left;
+	padding: 22px 35px 24px 35px;
+};
+
+.nav-label-name {
+	margin-right: 2px;
+}
+
+.nav-label {
+	color: #FFF;
+	padding: 10px;
+	margin: 0;
+	float: right;
+};
+
+.login {
+	float: right;
+	margin: 25px 10px 1px 0px;
+	padding: 8px;
+};
+
+.nav li:hover {
+	background-color: #111111;
+	text-decoration: none;
+};
+
+.nav li a:hover {
+	text-decoration: none;
+	color: #FFF;
+};
+
+.footers {
+	height: 7%;
+	display: flex;
+	flex-wrap: wrap;
+	background: #333333;
+	border: 1px solid black;
+	z-index: 2;
+	margin-top: 38.8%;
+};
+
+.sign-up {
+	background: #FFF;
+	border: 1.5px solid black;
+	border-radius: 13px;
+	z-index: 5;
+	position: absolute;
+	margin-top: 13%;
+	margin-left: 64%;
+	padding: 10px;
+}
+
+.sign-up-title {
+	margin: 0px 0px 10px 0px;
+}
+
+
+
+
+
+
+
