@@ -8,6 +8,7 @@
         <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 		<link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/index-style.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<script src="js/jquery.js"></script>
 		<script src='js/knockout-3.4.0.js'></script>
         <script type="text/javascript" src="js/validation.js"></script>
@@ -27,31 +28,34 @@
                         </li>
                         <label for="password" class="nav-label">
                             <span class="nav-label-name">Password:</span><br>
-                            <input type="text" name="password1" placeholder="shhh..." required>
+                            <input type="password" name="password1" required>
                         </label>
                         <label for="email" class="nav-label">
                             <span class="nav-label-name">Email Address:</span><br>
-                            <input type="text" name="email" placeholder="name@example.com" required>
+                            <input type="text" name="email" required>
                         </label>
                     </ul>
                 </nav>
             </div>
             <div class="sign-up">
-                <h2 class="sign-up-title">Sign Up</h2>
-                <label for="full-name">
-                    <span class="pi-label">Full Name:</span>
-                    <input type="text" name="fullname" placeholder="John Doe" required>
-                </label><br>
-                <label for="email">
-                    <span class="pi-label">Email Address:</span>
-                    <input type="text" name="email" placeholder="name@example.com" required>
-                </label><br>
-                <label for="password">
-                    <span class="pi-label">Password:</span>
-                    <input type="text" name="password1" placeholder="shhh..." required><br>
-                    <span class="pi-label">Confirm Password: </span>
-                    <input type="text" name="password1" placeholder="I said, shhh..." required>
-                </label><br>
+                <form>
+                    <label for="full-name">
+                        <input class="sign-input" type="text" name="fullname" placeholder="Full name" required>
+                    </label><br>
+                    <label for="email">
+                        <input class="sign-input" type="text" name="email" placeholder="Your email address" required>
+                    </label><br>
+                    <label for="password1">
+                        <input id="first-password" class="sign-input" type="password" name="password1" placeholder="Create a password" required><br>
+                    </label>
+                    <label id="password2" for="password2">
+                        <input id="second-password" class="sign-input" type="password" name="password1" placeholder="Confirm password" required>
+                    </label><br>
+                    <input id="sign-up-button" class="sign-up-button centered" type="submit" value="Sign up for Meetup" style="font-size: 18px">
+                    <!-- <button id="sign-up-button" class="sign-up-button" class="centered">
+                      <!--   <a href="">Sign up for Meetup</a>
+                    </button> --> -->
+                </form>
             </div>
             <div class="row full-width">
                 <!-- <header class="header">
@@ -66,5 +70,6 @@
                 </footer>
             </div>
         </div>
+        <script src="js/password.js"></script>
     </body>
 </html>

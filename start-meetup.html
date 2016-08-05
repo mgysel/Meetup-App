@@ -7,56 +7,60 @@
         <title>Create a Meetup</title>
         <link rel="shortcut icon" type="image/png" href="images/favicon.png">
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/sign-up-style.css">
+        <link rel="stylesheet" href="css/start-meetup.css">
         <script src="js/jquery.js"></script>
         <script src='js/knockout-3.4.0.js'></script>
         <script type="text/javascript" src="js/validation.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
     </head>
 
-    <body>
-        <div class="container">
+    <body class="full-width">
+        <div class="container-fluid full-width">
+            <div class="row full-width">
+                <nav class="nav">
+                    <ul>
+                        <li class="my-meetup">
+                            <h1>Create a Meetup</h1>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <div>
                 <img src="">
-                <header>
-                    <h1>Start a Meetup</h1>
-                </header>
-                <div>
-                <!-- <h1>Personal Information</h1> -->
-                    <p>What do you want to call the event?</p>
-                    <label for="title">
-                        <span class="labels">Name of Event:</span>
-                        <input type="text" name="event-name" placeholder="Susie's 21st!" required>
-                    </label>
-                    <p>How would you categorize it?</p>
-                    <label for="category">
-                        <span class="labels">Type of Event:</span>
-                        <input type="text" name="event-type" placeholder="birthday party" required>
-                    </label>
-                    <p>It's not an event without a host and guests!</p>
-                    <label for="event-host">
-                        <span class="labels">Host:</span>
-                        <input type="text" name="password1" placeholder="Susie and Michelle"><br>
-                    </label><br>
-                    <label for="event-guests">
-                        <span class="labels">Guests:</span>
-                        <input type="text" name="password1" placeholder="LeBron, the cast of 'Boy Meets World,...me?"><br>
-                    </label><br>
-                    <p>You didn't invite me? Where's it located (mischievous laugh)? </p>
-                    <label for="category">
-                        <span class="labels">Type of Event:</span>
-                        <input type="text" name="event-type" placeholder="birthday party" required>
-                    </label>
-                    <p>I'm probably busy that day, but when is it?</p>
-                    <label for="employer">
-                        <span class="labels">Date & Time: </span>
-                        <input type="text" name="date-time" placeholder="Meetup Inc.">
-                    </label><br>
-                    <a href="">
-                        <button class="button" type="button">
-                            <a href="home-page.html">Sign Up</a>
-                        </button>
-                    </a>
+                <div class="row full-width main-content">
+                    <div style="width:100%">
+                        <p>What do you want to call the event?</p>
+                        <label for="title">
+                            <input class="input" type="text" name="event-name" placeholder="Susie's 21st!" required>
+                        </label>
+                        <p>How would you categorize it?</p>
+                        <label for="category">
+                            <input class="input" type="text" name="event-type" placeholder="Birthday Party" required>
+                        </label>
+                        <p>Who are the hosts and guests?</p>
+                        <label for="event-host" id="label-host">
+                            <input class="input" type="text" name="password1" placeholder="Host(s)">
+                        </label><br>
+                        <label for="event-guests" id="label-guest">
+                            <input class="input" type="text" name="password1" placeholder="Guest(s)">
+                        </label><br>
+                        <p>You didn't invite me? Where's it located? </p>
+                        <label for="category">
+                            <input class="input" type="text" name="event-type" placeholder="Hesse Park" required>
+                        </label>
+                        <p>I'm probably busy that day, but when is it?</p>
+                        <label for="date" class="input-date-time">
+                            <input class="input" type="text" placeholder="Date" onfocus="(this.type='date')">
+                        </label>
+                        <label for="time" class="input-date-time" id="input-time">
+                            <input class="input" type="text" placeholder="Time" onfocus="(this.type='time')">
+                        </label><br>
+                        <a class="create-meetup-button" href="home-page.html">Create Meetup</a>
+                    </div>
+                </div>
+                <div class="row full-width">
+                    <footer class="footers navbar-fixed-bottom">
+                    </footer>
                 </div>
             </div>
         </div>

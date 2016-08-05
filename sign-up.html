@@ -8,65 +8,69 @@
         <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 		<link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/sign-up-style.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<script src="js/jquery.js"></script>
 		<script src='js/knockout-3.4.0.js'></script>
         <script type="text/javascript" src="js/validation.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
     </head>
 
-    <body>
-        <div class="container">
-            <div>
-                <div>
-                    <!-- <h1>Personal Information</h1> -->
-                    <p>Hi friend! My name's Personal Info Form, what's your's?</p>
-                    <label for="full-name">
-                        <span class="pi-label">Full Name:</span>
-                        <input type="text" name="fullname" placeholder="John Doe" required>
-                    </label>
-                    <p>To organize meetups with all your friends, I'll need your email.</p>
-                    <label for="email">
-                        <span class="pi-label">Email Address:</span>
-                        <input type="text" name="email" placeholder="name@example.com" required>
-                    </label>
-                    <p>How about a secure password?</p>
-                    <label for="password">
-                        <span class="pi-label">Password:</span>
-                        <input type="text" name="password1" placeholder="shhh..." required><br>
-                        <span class="pi-label">Confirm Password: </span>
-                        <input type="text" name="password1" placeholder="I said, shhh..." required>
-                    </label>
-                    <br><br>
-
-                    <p>And if you still feel like talking, let me into your life..<br>
-                        Where do you work?</p>
+    <body class="full-width">
+        <div class="container-fluid full-width">
+            <div class="row full-width">
+                <nav class="nav">
+                    <ul>
+                        <li class="login">
+                            <a href="log-in.html">Log In</a>
+                        </li>
+                        <li class="start-meetup">
+                            <a href="start-meetup.html">Start a Meetup</a>
+                        </li>
+                        <label for="password" class="nav-label">
+                            <span class="nav-label-name">Password:</span><br>
+                            <input type="text" name="password1" required>
+                        </label>
+                        <label for="email" class="nav-label">
+                            <span class="nav-label-name">Email Address:</span><br>
+                            <input type="text" name="email" required>
+                        </label>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row full-width">
+                <!-- <header class="header">
+                    <h1>
+                        <a href="start-meetup.html">Meetup with friends.</a>
+                    </h1>
+                </header> -->
+                <img class="background-image img-responsive" src="img/friends1.jpg" alt="Friends at park with skyline background">
+            </div>
+            <!-- <h1>Personal Information</h1> -->
+            <div class="row">
+                <div class="centered inputs">
+                    <p class="inputs-title">Last step!</p>
                     <label for="employer">
-                        <span class="oi-label">Employer: </span>
-                        <input type="text" name="fullname" placeholder="Meetup Inc.">
+                        <input class="input" type="text" name="fullname" placeholder="Employer">
                     </label><br>
-                    <p>Cool, what do you do there?</p>
                     <label for="occupation">
-                        <span class="oi-label">Occupation: </span>
-                        <input type="text" name="fullname" placeholder="Front-End Developer"><br>
-                    </label>
-                    <p>Not to change the subject, but <em>exactly</em> what day were you born?</p>
+                        <input class="input" type="text" name="fullname" placeholder="Occupation"><br>
+                    </label><br>
                     <label for="birthdate">
-                        <span class="oi-label">Birthdate: </span>
-                        <input type="text" name="email" placeholder="name@example.com"><br>
+                        <input class="input" type="text" placeholder="Birthdate" onfocus="(this.type='date')"><br>
                     </label>
                     <br><br>
-                    <p>Thanks YOUR NAME HERE, I'll never forget you.</p><br>
-                    <a href="">
-                        <button class="button" type="button">
-                            <a href="home-page.html">Sign Up</a>
-                        </button>
-                    </a>
+                    <button class="sign-skip-button" id="skip-button" type="button">
+                        <a href="home-page.html">Skip this step</a>
+                    </button>
+                    <button class="sign-skip-button" id="create-button" type="button">
+                        <a href="home-page.html">Create an account</a>
+                    </button>
                 </div>
             </div>
-
+            <div class="row full-width">
+                <footer class="footers navbar-fixed-bottom">
+                </footer>
             </div>
         </div>
-
-
     </body>
 </html>

@@ -1,0 +1,144 @@
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif; }
+
+.nav, .header, .background-image .footer {
+  border: 1px solid black; }
+
+label {
+  font-weight: normal; }
+
+.background-image {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 0;
+  position: fixed; }
+
+.header {
+  position: absolute;
+  margin-left: 8%;
+  margin-top: 24.93%;
+  transform: rotate(-0.98deg);
+  z-index: 1;
+  color: #FFF; }
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333; }
+
+.nav li a {
+  padding: none;
+  color: #FFF;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  text-decoration: none; }
+
+.start-meetup {
+  float: left;
+  padding: 22px 35px 24px 35px;
+  font-size: 17px; }
+
+.login {
+  float: right;
+  margin: 25px 10px 1px 0px;
+  padding: 8px;
+  font-size: 15px; }
+
+.nav-label-name {
+  margin-right: 2px; }
+
+.nav-label {
+  color: #FFF;
+  padding: 10px;
+  margin: 0;
+  float: right; }
+
+.nav-label input {
+  color: #000;
+  padding-left: 5px;
+  font-size: 14.5px; }
+
+.nav li:hover {
+  background-color: #111111;
+  text-decoration: none; }
+
+.nav li a:hover {
+  text-decoration: none;
+  color: #FFF; }
+
+.footers {
+  height: 7%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #333333;
+  border: 1px solid black;
+  z-index: 2;
+  margin-top: 38.8%; }
+
+.footers {
+  height: 7%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #333333;
+  border: 1px solid black;
+  z-index: 2;
+  margin-top: 38.8%; }
+
+.inputs {
+  border-radius: 13px;
+  z-index: 5;
+  position: absolute;
+  margin-top: 11%;
+  margin-left: calc(50% - 230px);
+  padding: 10px;
+  border: 1px solid black;
+  padding: 18px 10px;
+  background: #333333;
+  color: #fff;
+  border-radius: 10px; }
+
+.inputs-title {
+  font-size: 18px; }
+
+.input {
+  color: #000;
+  width: 300px;
+  height: 40px;
+  margin: 5px 0 5px 38px;
+  border-radius: 6px;
+  padding-left: 7px; }
+
+.sign-skip-button {
+  border: 1px solid black;
+  width: 170px;
+  height: 50px;
+  background: #333333;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  font-size: 15px; }
+
+#create-button {
+  margin-left: 0; }
+
+.sign-skip-button a {
+  color: #FFF; }
+
+.sign-skip-button:hover {
+  background-color: #111111;
+  color: #FFF; }
+
+.sign-skip-button a:hover {
+  text-decoration: none; }
