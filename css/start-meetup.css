@@ -53,6 +53,7 @@ label {
 
 .main-content {
   margin-top: 17px;
+  margin-bottom: 5%;
   border: 1px solid #d7d7d7;
   background-color: #FFF;
   width: 60%;
@@ -80,12 +81,27 @@ label {
 #label-host {
   height: 40px; }
 
-.input-date-time {
-  max-width: 47%;
+.input-date {
+  max-width: 44%; }
+
+.input-time {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: inline-block;
+  margin-left: 1%;
+  width: 25%; }
+
+#start-time {
+  width: 24.7%;
+  margin-left: 3.9%; }
+
+#guest-message {
   margin-bottom: 16px; }
 
-#input-time {
-  margin-left: 5.3%; }
+#guest-message-input {
+  height: 70px; }
 
 .create-meetup-button {
   display: -ms-flexbox;

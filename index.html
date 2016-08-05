@@ -52,9 +52,6 @@
                         <input id="second-password" class="sign-input" type="password" name="password1" placeholder="Confirm password" required>
                     </label><br>
                     <input id="sign-up-button" class="sign-up-button centered" type="submit" value="Sign up for Meetup" style="font-size: 18px">
-                    <!-- <button id="sign-up-button" class="sign-up-button" class="centered">
-                      <!--   <a href="">Sign up for Meetup</a>
-                    </button> --> -->
                 </form>
             </div>
             <div class="row full-width">
@@ -70,6 +67,17 @@
                 </footer>
             </div>
         </div>
+        <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+            apiKey: "AIzaSyCQpko1rJH8CETtLzbBaUwl5ix0sYWAg00",
+            authDomain: "meetup-project-c59d7.firebaseapp.com",
+            databaseURL: "https://meetup-project-c59d7.firebaseio.com",
+            storageBucket: "",
+            };
+            firebase.initializeApp(config);
+        </script>
         <script src="js/password.js"></script>
     </body>
 </html>

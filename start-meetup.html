@@ -35,25 +35,37 @@
                         </label>
                         <p>How would you categorize it?</p>
                         <label for="category">
-                            <input class="input" type="text" name="event-type" placeholder="Birthday Party" required>
+                            <input list="event-types-list" class="input" type="text" name="event-type" placeholder="Birthday Party" required>
                         </label>
+                        <datalist id="event-types-list">
+                            <option value="Birthday Party">
+                            <option value="Conference Talk">
+                            <option value="Wedding">
+                        </datalist>
                         <p>Who are the hosts and guests?</p>
                         <label for="event-host" id="label-host">
-                            <input class="input" type="text" name="password1" placeholder="Host(s)">
+                            <input class="input" type="text" name="password1" placeholder="Host(s)" required>
                         </label><br>
                         <label for="event-guests" id="label-guest">
-                            <input class="input" type="text" name="password1" placeholder="Guest(s)">
+                            <input class="input" type="text" name="password1" placeholder="Guest(s)" required>
                         </label><br>
                         <p>You didn't invite me? Where's it located? </p>
                         <label for="category">
                             <input class="input" type="text" name="event-type" placeholder="Hesse Park" required>
                         </label>
                         <p>I'm probably busy that day, but when is it?</p>
-                        <label for="date" class="input-date-time">
-                            <input class="input" type="text" placeholder="Date" onfocus="(this.type='date')">
+                        <label for="date" class="input-date">
+                            <input class="input" type="text" placeholder="Date" onfocus="(this.type='date')" required>
                         </label>
-                        <label for="time" class="input-date-time" id="input-time">
-                            <input class="input" type="text" placeholder="Time" onfocus="(this.type='time')">
+                        <label for="time" id="start-time" class="input-time">
+                            <input class="input" type="text" placeholder="Start Time" onfocus="(this.type='time')" required>
+                        </label>
+                        <label for="time" id="end-time" class="input-time">
+                            <input class="input" type="text" placeholder="End Time" onfocus="(this.type='time')" required>
+                        </label>
+                        <p>Anything you want to say to the guests (optional)?</p>
+                        <label for="optional-message" id="guest-message">
+                            <textarea class="input" id="guest-message-input" type="text" rows="2" name="guest-message" placeholder="Come through the backdoor!" required></textarea>
                         </label><br>
                         <a class="create-meetup-button" href="home-page.html">Create Meetup</a>
                     </div>
