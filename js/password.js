@@ -1,8 +1,11 @@
 var submit = document.getElementById('sign-up-button');
 
-submit.onclick = function (firstPasswordInput, secondPasswordInput) {
-	var firstPasswordInput = document.querySelector('#first-password').value;
-	var secondPasswordInput = document.querySelector('#second-password').value;
+submit.onsubmit = function (firstPasswordInput, secondPasswordInput) {
+	var email = document.querySelector('#email').value;
+	var firstPassword = document.querySelector('#first-password');
+	var secondPassword = document.querySelector('#second-password');
+	var firstPasswordInput = firstPassword.value;
+	var secondPasswordInput = secondPassword.value;
 
 	// Short passwords
 	var shortChar = "";
@@ -43,8 +46,8 @@ submit.onclick = function (firstPasswordInput, secondPasswordInput) {
 	if (firstPasswordInput != secondPasswordInput) {
 		match = 'passwords must match ';
 	};
-	var alerts1 = "Please correct the following issues:\n" + shortChar + longChar + symbols + numbers + upperCase + lowerCase;
-	var alerts2 = "Please correct the following issues:\n" + match;
+	var alerts1 = shortChar + longChar + symbols + numbers + upperCase + lowerCase;
+	var alerts2 = match;
 	// console.log("alerts 1: " + alerts1);
 	// console.log("alerts 2: " + alerts2);
 	// console.log("symbols: " + symbols);
@@ -53,14 +56,23 @@ submit.onclick = function (firstPasswordInput, secondPasswordInput) {
 	// console.log("lowercase: " + lowerCase.length);
 	// console.log("countsymbols: " + countSymbols);
 
-	if (shortChar.length > 0 || longChar.length > 0 || symbols.length > 0 || numbers.length > 0 || upperCase.length > 0 || lowerCase.length > 0) {
+	if (alerts1.length > 0) {
+		// window.location.href = 'sign-up.html';
 		console.log("alerts 1: " + alerts1);
-		document.getElementById('first-password').setCustomValidity(alerts1);
-		document.getElementById('first-password').checkValidity();
+		firstPassword.setCustomValidity("Please correct the following issues:\n" + alerts1);
 	} else if (match.length > 0) {
-		document.getElementById('second-password').setCustomValidity(alerts2);
+		firstPassword.setCustomValidity("");
+		secondPassword.setCustomValidity("Please correct the following issues:\n" + alerts2);
 		console.log("alerts 2: " + alerts2);
 	} else {
-		window.location = "sign-up.html"
+		secondPassword.setCustomValidity("");
+		window.location.replace('sign-up.html');
+		alert("password good");
+		firebase.auth().createUserWithEmailAndPassword(email, firstPasswordInput).catch(function(error) {
+		  // Handle Errors here.
+		  var errorCode = error.code;
+		  var errorMessage = error.message;
+		  // ...
+		});
 	};
 };

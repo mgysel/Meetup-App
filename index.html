@@ -9,9 +9,23 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/index-style.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyCQpko1rJH8CETtLzbBaUwl5ix0sYWAg00",
+                authDomain: "meetup-project-c59d7.firebaseapp.com",
+                databaseURL: "https://meetup-project-c59d7.firebaseio.com",
+                storageBucket: "meetup-project-c59d7.appspot.com",
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-storage.js"></script>
 		<script src="js/jquery.js"></script>
 		<script src='js/knockout-3.4.0.js'></script>
-        <script type="text/javascript" src="js/validation.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
     </head>
 
@@ -21,7 +35,7 @@
                 <nav class="nav">
                     <ul>
                         <li class="login">
-                            <a href="log-in.html">Log In</a>
+                            <a href="home-page.html">Log In</a>
                         </li>
                         <li class="start-meetup">
                             <a href="start-meetup.html">Start a Meetup</a>
@@ -43,7 +57,7 @@
                         <input class="sign-input" type="text" name="fullname" placeholder="Full name" required>
                     </label><br>
                     <label for="email">
-                        <input class="sign-input" type="text" name="email" placeholder="Your email address" required>
+                        <input id="email" class="sign-input" type="text" name="email" placeholder="Your email address" required>
                     </label><br>
                     <label for="password1">
                         <input id="first-password" class="sign-input" type="password" name="password1" placeholder="Create a password" required><br>
@@ -67,17 +81,6 @@
                 </footer>
             </div>
         </div>
-        <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
-        <script>
-            // Initialize Firebase
-            var config = {
-            apiKey: "AIzaSyCQpko1rJH8CETtLzbBaUwl5ix0sYWAg00",
-            authDomain: "meetup-project-c59d7.firebaseapp.com",
-            databaseURL: "https://meetup-project-c59d7.firebaseio.com",
-            storageBucket: "",
-            };
-            firebase.initializeApp(config);
-        </script>
         <script src="js/password.js"></script>
     </body>
 </html>
