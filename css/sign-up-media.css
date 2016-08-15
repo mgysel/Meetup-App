@@ -1,0 +1,18 @@
+@media (max-width: 450px) {
+  body {
+    background-position: 40%; }
+  .nav {
+    height: 70px; }
+  .inputs {
+    width: 80%;
+    margin-left: 10%; }
+  .input {
+    width: 80%; }
+  .buttons {
+    margin-left: 5%; }
+  .sign-skip-button {
+    width: 45%; }
+  .sign-skip-button a {
+    font-size: 15px; }
+  #create-button {
+    position: absolute; } }

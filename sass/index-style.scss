@@ -1,12 +1,18 @@
 // Omnipotent styling
 html, body {
-	height: 100%;
 	font-family: 'Open Sans', sans-serif;
-};
+}
+
+body{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 44% -30px;
+}
 
 .nav, .header, .background-image .footer {
 	border: 1px solid black;
-};
+}
 
 label {
 	font-weight: normal;
@@ -18,75 +24,72 @@ label {
 	flex-wrap: wrap;
 	z-index: 0;
 	position: fixed;
-};
-
-// Nav bar at top
-.header {
-	position: absolute;
-	margin-left: 8%;
-	margin-top: 24.93%;
-	transform: rotate(-.98deg);
-	z-index: 1;
-	color: #FFF;
 }
 
+// Nav bar at top
 .nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color: #333333
-};
+}
 
 
 .nav li a {
-	padding: none;
-	color: #FFF;
+	color: #fff;
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
 	text-decoration: none;
-};
+}
 
 .start-meetup {
 	float: left;
 	padding: 22px 35px 24px 35px;
 	font-size: 17px;
-};
+}
 
 .login {
 	float: right;
 	margin: 25px 10px 1px 0px;
 	padding: 8px;
 	font-size: 15px;
-};
+}
 
-.nav-label-name {
+.nav-label-password {
 	margin-right: 2px;
-};
+}
 
 .nav-label {
-	color: #FFF;
+	color: #fff;
 	padding: 10px;
 	margin: 0;
-	float: right;
-};
+}
+
+#nav-label-email {
+	margin-left: calc(98% - 187.3px - 58.36px - 412px);
+}
 
 .nav-label input {
 	color: #000;
 	padding-left: 5px;
 	font-size: 14.5px;
-};
+}
+
+.nav-label input::placeholder {
+	font-size: 0;
+}
 
 .nav li:hover {
 	background-color: #111111;
 	text-decoration: none;
-};
+}
 
 .nav li a:hover {
 	text-decoration: none;
-	color: #FFF;
-};
+	color: #fff;
+}
 
 // Footer bar at bottom
 .footers {
@@ -94,59 +97,51 @@ label {
 	display: flex;
 	flex-wrap: wrap;
 	background: #333333;
-	border: 1px solid black;
+	border: 1px solid #000;
 	z-index: 2;
 	margin-top: 38.8%;
-};
+}
 
-// Sign up box
+// Sign up form
 .sign-up {
-	border-radius: 13px;
+	margin: 9% 13% 100px 0;
+	float: right;
 	z-index: 5;
-	position: absolute;
-	margin-top: 6.5%;
-	margin-left: 63%;
-	padding: 10px;
-};
-
-.sign-up-title {
-	margin: 0px 0px 10px 0px;
-};
+}
 
 .sign-input {
+	display: flex;
+	flex-wrap: wrap;
 	width: 350px;
 	height: 46px;
 	margin: 5px;
 	border-radius: 6px;
-};
+}
 
 .sign-up input {
 	padding-left: 8px;
 	font-size: 16px;
-};
+}
 
 .sign-up input::-webkit-input-placeholder {
 	font-size: 16px;
-};
-
-#password2 {
-	margin-bottom: 18px;
-};
+}
 
 .sign-up-button {
 	border: 1px solid black;
 	padding: 18px 0 18px 0;
 	background: #333333;
-	color: #FFF;
+	color: #fff;
 	border-radius: 10px;
 	font-size: 18px;
 	margin-left: 5px;
+	margin-top: 15px;
 	width: 349px;
-};
+}
 
 .sign-up-button:hover {
 	background-color: #111111;
 	text-decoration: none;
 	text-decoration: none;
-	color: #FFF;
-};
+	color: #fff;
+}

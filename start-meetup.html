@@ -1,73 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Create a Meetup</title>
+        <title>Create a Meetup Page</title>
         <link rel="shortcut icon" type="image/png" href="images/favicon.png">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/start-meetup.css">
-        <script src="js/jquery.js"></script>
-        <script src='js/knockout-3.4.0.js'></script>
-        <script type="text/javascript" src="js/validation.js"></script>
-        <script type="text/javascript" src="js/app.js"></script>
+        <link rel="stylesheet" href="css/start-meetup-media.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
     </head>
-
     <body class="full-width">
         <div class="container-fluid full-width">
             <div class="row full-width">
-                <nav class="nav">
-                    <ul>
-                        <li class="my-meetup">
-                            <h1>Create a Meetup</h1>
-                        </li>
-                    </ul>
+            <div class="row full-width">
+                <nav class="col-md-12 nav create-meetup">
+                    <h1 class="center-block text-center create-meetup-text">Create a Meetup</h1>
                 </nav>
             </div>
+            </div>
             <div>
-                <img src="">
                 <div class="row full-width main-content">
                     <div style="width:100%">
-                        <p>What do you want to call the event?</p>
-                        <label for="title">
-                            <input class="input" type="text" name="event-name" placeholder="Susie's 21st!" required>
-                        </label>
-                        <p>How would you categorize it?</p>
-                        <label for="category">
-                            <input list="event-types-list" class="input" type="text" name="event-type" placeholder="Birthday Party" required>
-                        </label>
-                        <datalist id="event-types-list">
-                            <option value="Birthday Party">
-                            <option value="Conference Talk">
-                            <option value="Wedding">
-                        </datalist>
-                        <p>Who are the hosts and guests?</p>
-                        <label for="event-host" id="label-host">
-                            <input class="input" type="text" name="password1" placeholder="Host(s)" required>
-                        </label><br>
-                        <label for="event-guests" id="label-guest">
-                            <input class="input" type="text" name="password1" placeholder="Guest(s)" required>
-                        </label><br>
-                        <p>You didn't invite me? Where's it located? </p>
-                        <label for="category">
-                            <input class="input" type="text" name="event-type" placeholder="Hesse Park" required>
-                        </label>
-                        <p>I'm probably busy that day, but when is it?</p>
-                        <label for="date" class="input-date">
-                            <input class="input" type="text" placeholder="Date" onfocus="(this.type='date')" required>
-                        </label>
-                        <label for="time" id="start-time" class="input-time">
-                            <input class="input" type="text" placeholder="Start Time" onfocus="(this.type='time')" required>
-                        </label>
-                        <label for="time" id="end-time" class="input-time">
-                            <input class="input" type="text" placeholder="End Time" onfocus="(this.type='time')" required>
-                        </label>
-                        <p>Anything you want to say to the guests (optional)?</p>
-                        <label for="optional-message" id="guest-message">
-                            <textarea class="input" id="guest-message-input" type="text" rows="2" name="guest-message" placeholder="Come through the backdoor!" required></textarea>
-                        </label><br>
-                        <a class="create-meetup-button" href="home-page.html">Create Meetup</a>
+                        <form autocomplete="on">
+                            <p class="questions">What do you want to call the event?</p>
+                            <label for="title-input">
+                                <input id="title-input" class="input" type="text" placeholder="Susie's 21st!" required autofocus>
+                            </label>
+                            <p  class="questions">Cool name, but how would you describe it?</p>
+                            <label for="description-input">
+                                <input id="description-input" list="event-types-list" class="input" type="text" placeholder="Birthday Party" required>
+                            </label>
+                            <datalist id="event-types-list">
+                                <option value="Birthday Party">
+                                <option value="Conference Talk">
+                                <option value="Wedding">
+                            </datalist>
+                            <p  class="questions">Who's hosting and who's attending?</p>
+                            <label for="host-input" id="label-host-input">
+                                <input id="host-input" class="input" type="text" placeholder="Host(s)" required>
+                            </label><br>
+                            <label for="guest-input" id="label-guest-input">
+                                <input id="guest-input" class="input" type="text" placeholder="Guest(s)" required>
+                            </label><br>
+                            <p class="questions">You didn't invite me? Where's it located? </p>
+                            <label for="place-input">
+                                <input id="place-input" class="input" type="text" placeholder="Hesse Park" required>
+                            </label>
+                            <p class="questions">I'm probably busy that day, but when is it?</p>
+                            <label for="date-input" class="label-date-time label-date">
+                                <input id="date-input" class="input" type="text" placeholder="Date" onfocus="(this.type='date')" required>
+                            </label>
+                            <label for="end-time-input" id="end-time" class="label-time label-date-time">
+                                <input id="end-time-input" class="input" type="text" placeholder="End Time" onfocus="(this.type='time')" required>
+                            </label>
+                            <label for="start-time-input" id="start-time" class="label-time label-date-time">
+                                <input id="start-time-input" class="input" type="text" placeholder="Start Time" onfocus="(this.type='time')" required>
+                            </label>
+                            <p class="questions">Anything you want to say to the guests (optional)?</p>
+                            <label for="guest-message-input" id="guest-message">
+                                <textarea class="input" id="guest-message-input" rows="2" name="guest-message" placeholder="Come through the backdoor!"></textarea>
+                            </label><br>
+                            <input class="create-meetup-button centered" type="submit" value="Create Meetup" style="font-size: 18px">
+                        </form>
                     </div>
                 </div>
                 <div class="row full-width">

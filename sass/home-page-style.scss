@@ -3,51 +3,28 @@ html, body {
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
 	background-color: #fafafa;
-};
+}
 
 .nav, .header, .background-image .footer {
 	border: 1px solid black;
-};
+}
 
 label {
 	font-weight: normal;
-};
+}
 
 // Nav bar at top
-.header {
-	position: absolute;
-	margin-left: 8%;
-	margin-top: 24.93%;
-	transform: rotate(-.98deg);
-	z-index: 1;
-	color: #FFF;
-};
-
-.nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	height: 150px;
-	overflow: hidden;
-	background-color: #333333
-};
-
-
-.nav li {
-	padding: none;
-	color: #FFF;
-	margin-top: 18px;
-	margin-left: calc(50% - 150px);
+.nav {
 	display: flex;
 	flex-wrap: wrap;
-	text-decoration: none;
-};
+	height: 120px;
+	color: #FFF;
+	background-color: #333333;
+}
 
-.my-meetup {
-	float: left;
-	padding: 22px 35px 24px 35px;
-	font-size: 17px;
-};
+.my-meetup-text {
+	-webkit-align-items: center;
+}
 
 // Footer bar at bottom
 .footers {
@@ -58,7 +35,7 @@ label {
 	border: 1px solid #FFF;
 	z-index: 2;
 	margin-top: 38.8%;
-};
+}
 
 // Footer bar at bottom
 .footers {
@@ -69,82 +46,65 @@ label {
 	border: 1px solid #FFF;
 	z-index: 2;
 	margin-top: 38.8%;
-};
+}
 
 // Main content
 .main-content {
 	margin-top: 17px;
-};
+	margin-left: 4%;
+	margin-right: 4%;
+}
 
 // My meetups section
-.start-meetup {
+
+// Create meetup button
+.create-meetup {
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: calc(50% - 100px);
-	margin-bottom: 3px;
-	border: 1px solid #d7d7d7;
-	background-color: #fff;
 	width: 250px;
 	height: 50px;
-	border-radius: 10px;
-	font-size: 15px;
+	margin-bottom: 15px;
 	padding: 13px 0 12px 63px;
+	border: 1px solid #d7d7d7;
+	border-radius: 10px;
+	background-color: #fff;
+	font-size: 15px;
 	color: #000;
-};
-
-.start-meetup:hover {
+}
+// Create meeup button on hover
+.create-meetup:hover {
 	background-color: #f1f1f1;
 	text-decoration: none;
 	color: #000;
-};
-
-.my-meetups {
-	padding: 0 30px 0 100px;
-};
-
+}
+// Meetup list margin and padding set
 ul.meetup-list {
 	padding: 0;
 	margin: 0;
-};
+}
 
 .meetup {
-	display: flex;
-	flex-wrap: wrap;
-};
+	list-style-type: none;
+}
 
 .event-info {
 	padding: 15px 15px 5px 15px;
 	margin-bottom: 10px;
 	background-color: #fff;
-};
+}
 
 .event-time {
 	padding-left: 0;
-};
+}
 
 .event-date {
 	font-weight: bold;
 	display: flex;
 	flex-wrap: wrap;
-};
+}
 
 .event-info {
 	border: 1px solid #d7d7d7;
 	display: flex;
 	flex-wrap: wrap;
-};
-
-// Calendar Section
-.calendar {
-	border: 1px solid #d7d7d7;
-	background-color: #fff;
-	padding-bottom: 22%;
-	width: 23%;
-	margin-right: 1%;
-};
-
-.calendar-title {
-	font-size: 18px;
-	text-align: center;
-	margin-top: 8px;
-};
+}

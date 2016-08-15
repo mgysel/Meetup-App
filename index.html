@@ -1,36 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="full-width">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Initial Page</title>
+        <script src="js/jquery.js"></script>
         <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 		<link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/index-style.css">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
-        <script>
-            // Initialize Firebase
-            var config = {
-                apiKey: "AIzaSyCQpko1rJH8CETtLzbBaUwl5ix0sYWAg00",
-                authDomain: "meetup-project-c59d7.firebaseapp.com",
-                databaseURL: "https://meetup-project-c59d7.firebaseio.com",
-                storageBucket: "meetup-project-c59d7.appspot.com",
-            };
-            firebase.initializeApp(config);
-        </script>
-        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-storage.js"></script>
-		<script src="js/jquery.js"></script>
-		<script src='js/knockout-3.4.0.js'></script>
-        <script type="text/javascript" src="js/app.js"></script>
+        <link rel="stylesheet" href="css/index-media.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
     </head>
 
-    <body class="full-width">
-        <div class="full-width container-fluid">
+    <body background="img/beach1.jpg" class="full-width">
+        <div class="full-width container-fluid main">
             <div class="row full-width">
                 <nav class="nav">
                     <ul>
@@ -40,41 +24,37 @@
                         <li class="start-meetup">
                             <a href="start-meetup.html">Start a Meetup</a>
                         </li>
-                        <label for="password" class="nav-label">
-                            <span class="nav-label-name">Password:</span><br>
-                            <input type="password" name="password1" required>
-                        </label>
-                        <label for="email" class="nav-label">
-                            <span class="nav-label-name">Email Address:</span><br>
-                            <input type="text" name="email" required>
-                        </label>
+                        <li>
+                            <label for="nav-email-input" class="nav-label" id="nav-label-email">
+                                <span class="nav-label-email">Email Address:</span><br class="nav-line-break">
+                                <input id="nav-email-input" placeholder="Email Address" type="text" name="email" required>
+                            </label>
+                            <label for="nav-password-input" class="nav-label" id="nav-label-password">
+                                <span class="nav-label-password">Password:</span><br class="nav-line-break">
+                                <input id="nav-password-input" placeholder="Password" type="password" name="password1" required>
+                            </label>
+                        </li>
                     </ul>
                 </nav>
             </div>
-            <div class="sign-up">
-                <form>
-                    <label for="full-name">
-                        <input class="sign-input" type="text" name="fullname" placeholder="Full name" required>
-                    </label><br>
-                    <label for="email">
-                        <input id="email" class="sign-input" type="text" name="email" placeholder="Your email address" required>
-                    </label><br>
-                    <label for="password1">
-                        <input id="first-password" class="sign-input" type="password" name="password1" placeholder="Create a password" required><br>
-                    </label>
-                    <label id="password2" for="password2">
-                        <input id="second-password" class="sign-input" type="password" name="password1" placeholder="Confirm password" required>
-                    </label><br>
-                    <input id="sign-up-button" class="sign-up-button centered" type="submit" value="Sign up for Meetup" style="font-size: 18px">
-                </form>
-            </div>
-            <div class="row full-width">
-                <!-- <header class="header">
-                    <h1>
-                        <a href="start-meetup.html">Meetup with friends.</a>
-                    </h1>
-                </header> -->
-                <img class="background-image img-responsive" src="img/beach1.jpg" alt="Friends camping on scenic beach">
+            <div class="container-fluid">
+                <div class="row full-width">
+                    <form autocomplete="on" class="sign-up">
+                        <label for="fullname">
+                            <input  id="fullname" class="sign-input" type="text" placeholder="Full name" required>
+                        </label><br>
+                        <label for="email">
+                            <input id="email" class="sign-input" type="text" placeholder="Your email address" required>
+                        </label><br>
+                        <label for="password1">
+                            <input id="password1" class="sign-input" type="password" placeholder="Create a password" required>
+                        </label><br>
+                        <label for="password2">
+                            <input id="password2" class="sign-input" type="password" placeholder="Confirm password" required>
+                        </label><br>
+                        <input id="sign-up-button" class="sign-up-button centered" type="submit" value="Sign up for Meetup" style="font-size: 18px">
+                    </form>
+                </div>
             </div>
             <div class="row full-width">
                 <footer class="footers navbar-fixed-bottom">

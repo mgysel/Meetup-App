@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -6,65 +6,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Sign Up Page</title>
         <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+        <script src="js/jquery.js"></script>
 		<link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/sign-up-style.css">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<script src="js/jquery.js"></script>
-		<script src='js/knockout-3.4.0.js'></script>
-        <script type="text/javascript" src="js/validation.js"></script>
-        <script type="text/javascript" src="js/app.js"></script>
+        <link rel="stylesheet" href="css/sign-up-media.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
     </head>
 
-    <body class="full-width">
+    <body background="img/friends1.jpg" class="full-width">
         <div class="container-fluid full-width">
             <div class="row full-width">
-                <nav class="nav">
-                    <ul>
-                        <li class="login">
-                            <a href="log-in.html">Log In</a>
-                        </li>
-                        <li class="start-meetup">
-                            <a href="start-meetup.html">Start a Meetup</a>
-                        </li>
-                        <label for="password" class="nav-label">
-                            <span class="nav-label-name">Password:</span><br>
-                            <input type="text" name="password1" required>
-                        </label>
-                        <label for="email" class="nav-label">
-                            <span class="nav-label-name">Email Address:</span><br>
-                            <input type="text" name="email" required>
-                        </label>
-                    </ul>
-                </nav>
+                <div class="col-md-12 nav my-meetup"></div>
             </div>
             <div class="row full-width">
-                <!-- <header class="header">
-                    <h1>
-                        <a href="start-meetup.html">Meetup with friends.</a>
-                    </h1>
-                </header> -->
-                <img class="background-image img-responsive" src="img/friends1.jpg" alt="Friends at park with skyline background">
-            </div>
-            <!-- <h1>Personal Information</h1> -->
-            <div class="row">
-                <div class="centered inputs">
-                    <p class="inputs-title">Last step!</p>
-                    <label for="employer">
-                        <input class="input" type="text" name="fullname" placeholder="Employer">
-                    </label><br>
-                    <label for="occupation">
-                        <input class="input" type="text" name="fullname" placeholder="Occupation"><br>
-                    </label><br>
-                    <label for="birthdate">
-                        <input class="input" type="text" placeholder="Birthdate" onfocus="(this.type='date')"><br>
-                    </label>
-                    <br><br>
-                    <button class="sign-skip-button" id="skip-button" type="button">
-                        <a href="home-page.html">Skip this step</a>
-                    </button>
-                    <button class="sign-skip-button" id="create-button" type="button">
-                        <a href="home-page.html">Create an account</a>
-                    </button>
+                <div class="col-md-10 inputs">
+                    <form autocomplete="on">
+                        <p class="center-block text-center inputs-title">Last step!</p>
+                        <label class="center-block input-label" for="employer">
+                            <input id="employer" class="center-block input" type="text" placeholder="Employer" autofocus>
+                        </label><br>
+                        <label class="center-block input-label" for="occupation">
+                            <input id="occupation" class="center-block input" type="text" placeholder="Occupation"><br>
+                        </label><br>
+                        <label class="center-block input-label" for="birthdate">
+                            <input id="birthdate" class="center-block input" type="text" placeholder="Birthdate" onfocus="(this.type='date')"><br>
+                        </label>
+                        <br>
+                        <div class="buttons">
+                            <button class="sign-skip-button" id="skip-button" type="button">
+                                <a href="home-page.html">Skip this step</a>
+                            </button>
+                            <button class="sign-skip-button" id="create-button" type="button">
+                                <a href="home-page.html">Create an account</a>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="row full-width">
