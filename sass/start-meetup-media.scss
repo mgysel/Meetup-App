@@ -3,6 +3,9 @@
   		width: 80%;
     	margin-left: 10%;
   	}
+  	.time-validation {
+		margin-left: 33.5%;
+	}
 }
 
 @media (min-width: 450px) and (max-width: 550px) {
@@ -15,6 +18,9 @@
 	}
 	.create-meetup {
 		height: 90px;
+	}
+  	.time-validation {
+		margin-left: 39%;
 	}
 }
 
@@ -39,6 +45,14 @@
 	}
 	#end-time {
 		margin-left: 2%;
+	}
+	#date-input {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+  	.time-validation {
+		margin-left: 0;
+		margin-top: 43px;
 	}
 }
 

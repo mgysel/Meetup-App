@@ -24,7 +24,9 @@ label {
 }
 
 .create-meetup-text {
+	display: flex;
 	-webkit-align-items: center;
+	margin-top: 9px;
 }
 
 // Footer bar at bottom
@@ -75,8 +77,15 @@ label {
 	margin-top: 3px;
 }
 
-.label-date {
+#date-input {
+	display: inline-block;
 	width: 44%;
+}
+
+#date-time-question {
+	width: 170%;
+	margin-right: 300%;
+	padding-right: 300px;
 }
 
 .label-time {
@@ -86,7 +95,49 @@ label {
 	width: 24%;
 	margin-left: 2.5%;
 	padding-left: 0;
+}
 
+.label-date {
+	margin-bottom: 0;
+}
+
+// Time Validation
+.time-validation {
+	display: none;
+	position: absolute;
+	width: 134px;
+	height: 58px;
+	margin-top: 10px;
+	margin-left: 24%;
+	padding: 6px 1px 6px 6px;
+	background-color: #f1f1f1;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 6px;
+}
+
+// Form Completion Validation
+.form-completion-validation {
+	display: none;
+	position: absolute;
+	margin-bottom: 90px;
+	margin-left: 17%;
+	margin-top: 62px;
+	padding: 6px 15px 0px 20px;
+	background-color: #f1f1f1;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 6px;
+}
+
+.form-completion-validation ul {
+	padding-left: 10px;
+}
+
+.form-completion-title {
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 3px;
 }
 
 // Create meetup button
@@ -95,9 +146,8 @@ label {
 	flex-wrap: wrap;
 	width: 250px;
 	height: 50px;
-	margin-left: calc(50% - 125px);
 	margin-bottom: 12px;
-	padding: 13px 0 12px 63px;
+	padding: 11px 0 13px 63px;
 	border: 1px solid #d7d7d7;
 	border-radius: 10px;
 	font-size: 15px;
@@ -109,4 +159,9 @@ label {
 	background-color: #f1f1f1;
 	text-decoration: none;
 	color: #000;
+}
+
+.create-meetup-label {
+	margin-left: 100px;
+	margin-left: calc(50% - 125px);
 }

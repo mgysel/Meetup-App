@@ -19,7 +19,10 @@ label {
   background-color: #333333; }
 
 .my-meetup-text {
-  -webkit-align-items: center; }
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  margin-top: 9px; }
 
 .footers {
   height: 7%;

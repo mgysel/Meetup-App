@@ -23,7 +23,9 @@ label {
 }
 
 .my-meetup-text {
+	display: flex;
 	-webkit-align-items: center;
+	margin-top: 9px;
 }
 
 // Footer bar at bottom
