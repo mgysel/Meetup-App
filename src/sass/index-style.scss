@@ -1,0 +1,229 @@
+// Omnipotent styling
+html, body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.body-index {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 44% -30px;
+    overflow-x: hidden;
+}
+
+.nav-index, .header, .background-image .footer {
+	border: 1px solid black;
+}
+
+.label-index {
+	font-weight: normal;
+}
+
+// Background image
+.background-image {
+	display: flex;
+	flex-wrap: wrap;
+	z-index: 0;
+	position: fixed;
+}
+
+// Nav bar at top
+.nav-index ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333333
+}
+
+
+.nav-index li a {
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	text-decoration: none;
+}
+
+.start-meetup {
+	float: left;
+	padding: 22px 35px 24px 35px;
+	font-size: 17px;
+}
+
+.login {
+	float: right;
+	margin: 25px 10px 1px 0px;
+	padding: 8px;
+	font-size: 15px;
+}
+
+.nav-label-password {
+	margin-right: 2px;
+}
+
+.nav-label {
+	color: #fff;
+	padding: 10px;
+	margin: 0;
+}
+
+#nav-label-email {
+	margin-left: calc(98% - 187.3px - 58.36px - 412px);
+}
+
+.nav-label input {
+	color: #000;
+	padding-left: 5px;
+	font-size: 14.5px;
+}
+
+.nav-label input::placeholder {
+	font-size: 0;
+}
+
+.nav-index li:hover {
+	background-color: #111111;
+	text-decoration: none;
+}
+
+.nav-index li a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+// Footer bar at bottom
+.footer-index {
+	height: 7%;
+	display: flex;
+	flex-wrap: wrap;
+	background: #333333;
+	border: 1px solid #000;
+	z-index: 2;
+	margin-top: 38.8%;
+}
+
+// Sign up form
+.sign-up {
+	margin: 7% 14% 0 0;
+	float: right;
+	z-index: 5;
+}
+
+.sign-input {
+	display: flex;
+	flex-wrap: wrap;
+	width: 350px;
+	height: 46px;
+	margin: 5px;
+	border-radius: 6px;
+}
+
+.sign-up input {
+	padding-left: 8px;
+	font-size: 16px;
+}
+
+.sign-up input::-webkit-input-placeholder {
+	font-size: 16px;
+}
+
+#optional-info-button {
+	cursor: pointer;
+	margin: 5px 0 0 6px;
+	border-radius: 20px;
+}
+
+#sign-up-button {
+	cursor: pointer;
+	margin-top: 10px;
+	padding: 18px 0 18px 0;
+	border-radius: 10px;
+}
+
+.sign-up-button {
+	border: 1px solid black;
+	background: #333333;
+	color: #fff;
+	font-size: 18px;
+	width: 349px;
+	float: left;
+	margin-left: 6px;
+	margin-bottom: 110px;
+}
+
+.sign-up-button:hover {
+	background-color: #111111;
+	text-decoration: none;
+	text-decoration: none;
+	color: #fff;
+}
+
+// Optional Inputs
+.optional-input {
+	display: none;
+	margin-right: 100%;
+}
+
+#employer {
+	margin-top: 14px;
+}
+
+#birthdate {
+	margin-bottom: 9px;
+}
+
+// Password Validation
+.password-validation {
+	display: none;
+
+	padding: 6px 1px 1px 1px;
+	background-color: #fff;
+	border: 1px solid #d7d7d7;
+
+	width: 350px;
+	height: 134px;
+	margin: 5px 5px 10px 6px;
+
+	border-radius: 6px;
+}
+
+.password-validation ul {
+	padding-left: 10px;
+}
+
+.password-validation li {
+
+	list-style-type: none;
+}
+
+.check {
+	color: #cc0000;
+}
+
+// Form Validation
+.form-validation {
+	display: none;
+	position: absolute;
+	width: 169px;
+	height: 75px;
+	margin: 5px;
+	margin-top: 10px;
+	padding: 6px 1px 1px 1px;
+	background-color: #f1f1f1;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 6px;
+}
+
+.form-validation ul {
+	padding-left: 10px;
+}
+
+.form-validation li {
+	list-style-type: none;
+}
+
+.check-2 {
+	color: #cc0000;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="full-width">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Initial Page</title>
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="css/index.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    </head>
+
+    <body background="img/beach1.jpg" class="full-width body-index">
+        <div class="full-width container-fluid main">
+            <div class="row full-width">
+                <nav class="nav nav-index">
+                    <ul>
+                        <li class="login">
+                            <a href="home-page.html">Log In</a>
+                        </li>
+                        <li class="start-meetup">
+                            <a href="start-meetup.html">Start a Meetup</a>
+                        </li>
+                        <li>
+                            <label for="nav-email-input" class="nav-label label-index" id="nav-label-email">
+                                <span class="nav-label-email">Email Address:</span><br class="nav-line-break">
+                                <input id="nav-email-input" placeholder="Email Address" type="email" name="email">
+                            </label>
+                            <label for="nav-password-input" class="nav-label label-index" id="nav-label-password">
+                                <span class="nav-label-password">Password:</span><br class="nav-line-break">
+                                <input id="nav-password-input" placeholder="Password" type="password" name="password1">
+                            </label>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container-fluid">
+                <div class="row full-width">
+                    <form autocomplete="on" class="sign-up">
+                        <label for="fullname" class="label-index">
+                            <input  id="fullname" class="sign-input" type="text" placeholder="Full name" autofocus>
+                        </label><br>
+                        <label for="email" class="label-index">
+                            <input id="email" class="sign-input" type="email" placeholder="Your email address">
+                        </label><br>
+                        <label for="password1" class="label-index">
+                            <input id="password1" class="sign-input" type="password" placeholder="Create a password">
+                        </label><br>
+                        <label for="password2" class="label-index">
+                            <input id="password2" class="sign-input" type="password" placeholder="Confirm password">
+                        </label><br>
+                        <div class="password-validation">
+                            <ul>
+                                <li id="password-length-item"><span id="password-length-check" class="check">&#10006;</span> 10-35 characters long.</li>
+                                <li id="uppercase-item"><span id="uppercase-check" class="check">&#10006;</span> Contains uppercase letter.</li>
+                                <li id="lowercase-item"><span id="lowercase-check" class="check">&#10006;</span> Contains lowercase letter.</li>
+                                <li id="number-item"><span id="number-check" class="check">&#10006;</span> Contains number.</li>
+                                <li id="symbol-item"><span id="symbol-check" class="check">&#10006;</span> Contains a symbol.</li>
+                                <li id="match-item"><span id="match-check" class="check">&#10006;</span> Passwords match.</li>
+                            </ul>
+                        </div>
+                        <p id="optional-info-button" class="sign-up-button text-center centered">Add Personal Information</p><br>
+                        <label for="employer" class="label-index">
+                            <input id="employer" class="sign-input optional-input" type="text" placeholder="Employer">
+                        </label><br class="optional-input label-index">
+                        <label for="occupation">
+                            <input id="occupation" class="sign-input optional-input" type="text" placeholder="Occupation">
+                        </label><br class="optional-input label-index">
+                        <label for="birthdate">
+                            <input id="birthdate" class="sign-input optional-input" type="text" placeholder="Birthdate">
+                        </label><br class="optional-input label-index">
+                        <p id="sign-up-button" class="sign-up-button centered text-center" style="font-size: 18px">Sign up for Meetup</p>
+                    </form>
+                </div>
+            </div>
+            <div class="row full-width">
+                <footer class="footers footer-index navbar-fixed-bottom">
+                </footer>
+            </div>
+        </div>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
