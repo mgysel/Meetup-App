@@ -94,15 +94,29 @@ label {
 .label-date {
   margin-bottom: 0; }
 
-.time-validation {
+.validation {
   display: none;
-  width: 100%;
+  color: #cc0000;
+  padding-top: 6px;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+#total-validation {
+  padding-top: 0; }
+
+#time-validation-start {
+  display: none;
+  float: left;
   height: 35px;
-  padding: 6px 1px 0px 0px;
+  padding: 6px 0px 0px 0px;
+  margin-bottom: 0;
   background-color: #f1f1f1;
   color: #000;
   background-color: #fff;
   color: #cc0000; }
+
+#time-validation-empty {
+  padding-bottom: 5px; }
 
 .form-completion-validation {
   display: none;

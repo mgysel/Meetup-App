@@ -1,9 +1,7 @@
 @media (min-width: 550px) and (max-width: 1000px) {
   .main-content {
     width: 80%;
-    margin-left: 10%; }
-  .time-validation {
-    margin-left: 37.5%; } }
+    margin-left: 10%; } }
 
 @media (min-width: 450px) and (max-width: 550px) {
   .main-content {
@@ -12,9 +10,7 @@
   .center-block {
     font-size: 31px; }
   .create-meetup {
-    height: 90px; }
-  .time-validation {
-    margin-left: 44.4%; } }
+    height: 90px; } }
 
 @media (max-width: 450px) {
   .main-content {
@@ -24,9 +20,7 @@
   .center-block {
     font-size: 24px; }
   .create-meetup {
-    height: 70px; }
-  .time-validation {
-    margin-left: 40%; } }
+    height: 70px; } }
 
 @media (max-width: 350px) {
   .main-content {

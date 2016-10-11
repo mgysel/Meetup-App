@@ -12,11 +12,9 @@
     <body class="full-width">
         <div class="container-fluid full-width">
             <div class="row full-width">
-            <div class="row full-width">
                 <nav class="col-md-12 nav create-meetup">
                     <h1 class="center-block text-center create-meetup-text">Create a Meetup</h1>
                 </nav>
-            </div>
             </div>
             <div>
                 <div class="row full-width main-content">
@@ -25,10 +23,12 @@
                             <label for="title-input">
                                 <p class="questions">What do you want to call the event?</p>
                                 <input id="title-input" class="input" type="text" placeholder="Susie's 21st!" autofocus>
+                                <p id="title-validation" class="validation">*Required field.</p>
                             </label>
                             <label for="description-input">
                                 <p class="questions">Cool name, but how would you describe it?</p>
                                 <input id="description-input" list="event-types-list" class="input" type="text" placeholder="Birthday Party">
+                                <p id="description-validation" class="validation">*Required field.</p>
                             </label>
                             <datalist id="event-types-list">
                                 <option value="Birthday Party">
@@ -38,33 +38,34 @@
                             <label for="host-input" id="label-host-input">
                                 <p  class="questions">Who's hosting and who's attending?</p>
                                 <input id="host-input" class="input" type="text" placeholder="Host(s)">
+                                <p id="host-validation" class="validation">*Required field.</p>
                             </label><br>
                             <label for="guest-input" id="label-guest-input">
                                 <input id="guest-input" class="input" type="text" placeholder="Guest(s)">
+                                <p id="guest-validation" class="validation">*Required field.</p>
                             </label><br>
                             <label for="place-input">
                                 <p class="questions">You didn't invite me? Where's it located? </p>
                                 <input id="place-input" class="input" type="text" placeholder="Hesse Park">
+                                <p id="place-validation" class="validation">*Required field.</p>
                             </label>
-                            <label for="start-date-input" class="label-date-time label-date">
+                            <label for="start-time-input" class="label-date-time label-date">
                                 <p class="questions" id="date-time-question">I'm probably busy that day, but when is it?</p>
                             </label>
-                            <input id="start-date-input" class="input date-input" type="text" placeholder="Start Date" onfocus="(this.type='date')">
-                            <input id="end-date-input" class="input date-input" type="text" placeholder="End Date" onfocus="(this.type='date')">
                             <label for="start-time-input" id="start-time" class="label-time label-date-time">
-                                <input id="start-time-input" class="input time-input" type="text" placeholder="Start Time"  onfocus="(this.type='time')">
+                                <input id="start-time-input" class="input time-input" type="text" placeholder="Start Date/Time"  onfocus="(this.type='datetime-local')">
                             </label>
                             <label for="end-time-input" id="end-time" class="label-time label-date-time">
-                                <input id="end-time-input" class="input time-input" type="text" placeholder="End Time" onfocus="(this.type='time')">
+                                <input id="end-time-input" class="input time-input" type="text" placeholder="End Date/Time" onfocus="(this.type='datetime-local')">
                             </label>
-                            <div class="time-validation">
-                                <p class="time-validation-item">*Event must start before it ends.</p>
-                            </div>
+                            <p id="time-validation-empty" class="validation">*Required field.</p>
+                            <p id="time-validation-start" class="validation">*Event must start before it ends.</p>
                             <label for="guest-message-input" id="guest-message">
                                 <p class="questions">Anything you want to say to the guests (optional)?</p>
                                 <textarea class="input" id="guest-message-input" rows="2" name="guest-message" placeholder="Come through the backdoor!"></textarea>
                             </label><br>
                             <p id="optional-message" class="create-meetup-button centered" style="font-size: 18px">Create Meetup</p>
+                            <p id="total-validation" class="validation text-center">*Please update required fields above.</p>
                         </form>
                     </div>
                 </div>

@@ -173,6 +173,29 @@ html, body {
 	margin-bottom: 9px;
 }
 
+// Email Validation
+.email-validation {
+	display: none;
+
+	padding: 6px 1px 1px 1px;
+	background-color: #fff;
+	border: 1px solid #d7d7d7;
+
+	width: 350px;
+	height: 74px;
+	margin: 5px 5px 10px 6px;
+
+	border-radius: 6px;
+}
+
+.email-validation ul {
+	padding-left: 10px;
+}
+
+.email-validation li {
+	list-style-type: none;
+}
+
 // Password Validation
 .password-validation {
 	display: none;
@@ -193,7 +216,6 @@ html, body {
 }
 
 .password-validation li {
-
 	list-style-type: none;
 }
 
